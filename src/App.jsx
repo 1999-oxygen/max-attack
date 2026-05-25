@@ -34,23 +34,23 @@ import {
 } from 'lucide-react'
 
 const initialQuotesData = [
-  { sym: 'UKOILm', change: '-1210 -1.19%', up: false, time: '20:53:59', spread: '45', b_pre: '100.', b_main: '76', b_sup: '4', a_pre: '100.', a_main: '80', a_sup: '9', low: '98.500', high: '103.073' },
-  { sym: 'USOILm', change: '-5232 -5.45%', up: false, time: '23:39:07', spread: '20', b_pre: '90.', b_main: '76', b_sup: '3', a_pre: '90.', a_main: '78', a_sup: '3', low: '90.466', high: '91.379', isRed: true },
-  { sym: 'XNGUSDm', change: '-201 -0.66%', up: false, time: '23:38:16', spread: '179', b_pre: '3.00', b_main: '87', b_sup: '', a_pre: '3.02', a_main: '66', a_sup: '', low: '3.0029', high: '3.0232', isBlueAsk: true },
-  { sym: 'AUDCADm', change: '+311 0.32%', up: true, time: '23:39:04', spread: '18', b_pre: '0.98', b_main: '81', b_sup: '2', a_pre: '0.98', a_main: '83', a_sup: '0', low: '0.98529', high: '0.98875' },
-  { sym: 'AUDCHFm', change: '+31 0.06%', up: true, time: '23:39:00', spread: '9', b_pre: '0.55', b_main: '98', b_sup: '9', a_pre: '0.55', a_main: '99', a_sup: '8', low: '0.55944', high: '0.56108', isRed: true },
-  { sym: 'AUDCZKm', change: '+337 0.23%', up: true, time: '23:38:23', spread: '249', b_pre: '14.92', b_main: '35', b_sup: '', a_pre: '14.94', a_main: '84', a_sup: '', low: '14.8690', high: '14.9238', isBlueAsk: true },
-  { sym: 'AUDDKKm', change: '+598 0.13%', up: true, time: '23:39:03', spread: '1040', b_pre: '4.58', b_main: '97', b_sup: '3', a_pre: '4.60', a_main: '01', a_sup: '3', low: '4.51219', high: '4.58989', isBlueAskLine: true },
-  { sym: 'AUDHUFm', change: '-408 -0.19%', up: false, time: '23:38:30', spread: '308', b_pre: '219.', b_main: '91', b_sup: '4', a_pre: '220.', a_main: '22', a_sup: '2', low: '219.442', high: '220.176' },
-  { sym: 'AUDJPYm', change: '+305 0.27%', up: true, time: '23:39:00', spread: '19', b_pre: '113.', b_main: '76', b_sup: '9', a_pre: '113.', a_main: '78', a_sup: '8', low: '113.584', high: '113.770' },
+  { sym: 'UKOILm', change: '-1210 -1.19%', up: false, time: '20:53:59', spread: '45', b_pre: '100.', b_main: '76', b_sup: '4', a_pre: '100.', a_main: '80', a_sup: '9', low: '98.500', high: '103.07[...]
+  { sym: 'USOILm', change: '-5232 -5.45%', up: false, time: '23:39:07', spread: '20', b_pre: '90.', b_main: '76', b_sup: '3', a_pre: '90.', a_main: '78', a_sup: '3', low: '90.466', high: '91.379',[...]
+  { sym: 'XNGUSDm', change: '-201 -0.66%', up: false, time: '23:38:16', spread: '179', b_pre: '3.00', b_main: '87', b_sup: '', a_pre: '3.02', a_main: '66', a_sup: '', low: '3.0029', high: '3.0232'[...]
+  { sym: 'AUDCADm', change: '+311 0.32%', up: true, time: '23:39:04', spread: '18', b_pre: '0.98', b_main: '81', b_sup: '2', a_pre: '0.98', a_main: '83', a_sup: '0', low: '0.98529', high: '0.98875[...]
+  { sym: 'AUDCHFm', change: '+31 0.06%', up: true, time: '23:39:00', spread: '9', b_pre: '0.55', b_main: '98', b_sup: '9', a_pre: '0.55', a_main: '99', a_sup: '8', low: '0.55944', high: '0.56108',[...]
+  { sym: 'AUDCZKm', change: '+337 0.23%', up: true, time: '23:38:23', spread: '249', b_pre: '14.92', b_main: '35', b_sup: '', a_pre: '14.94', a_main: '84', a_sup: '', low: '14.8690', high: '14.923[...]
+  { sym: 'AUDDKKm', change: '+598 0.13%', up: true, time: '23:39:03', spread: '1040', b_pre: '4.58', b_main: '97', b_sup: '3', a_pre: '4.60', a_main: '01', a_sup: '3', low: '4.51219', high: '4.589[...]
+  { sym: 'AUDHUFm', change: '-408 -0.19%', up: false, time: '23:38:30', spread: '308', b_pre: '219.', b_main: '91', b_sup: '4', a_pre: '220.', a_main: '22', a_sup: '2', low: '219.442', high: '220.[...]
+  { sym: 'AUDJPYm', change: '+305 0.27%', up: true, time: '23:39:00', spread: '19', b_pre: '113.', b_main: '76', b_sup: '9', a_pre: '113.', a_main: '78', a_sup: '8', low: '113.584', high: '113.770[...]
 ]
 
 const availableNewQuotes = [
-  { sym: 'BTCUSDm', change: '+125 2.15%', up: true, time: '10:00:00', spread: '35', b_pre: '64000.', b_main: '50', b_sup: '0', a_pre: '64000.', a_main: '85', a_sup: '0', low: '63500.00', high: '65000.00' },
-  { sym: 'ETHUSDm', change: '-45 -1.25%', up: false, time: '10:00:00', spread: '15', b_pre: '3450.', b_main: '25', b_sup: '0', a_pre: '3450.', a_main: '40', a_sup: '0', low: '3400.00', high: '3500.00', isRed: true },
-  { sym: 'EURUSDm', change: '+12 0.10%', up: true, time: '10:00:00', spread: '10', b_pre: '1.08', b_main: '50', b_sup: '5', a_pre: '1.08', a_main: '51', a_sup: '5', low: '1.0800', high: '1.0900' },
-  { sym: 'GBPUSDm', change: '-15 -0.12%', up: false, time: '10:00:00', spread: '12', b_pre: '1.26', b_main: '40', b_sup: '2', a_pre: '1.26', a_main: '41', a_sup: '4', low: '1.2600', high: '1.2700', isRed: true },
-  { sym: 'USDJPYm', change: '+50 0.35%', up: true, time: '10:00:00', spread: '14', b_pre: '150.', b_main: '25', b_sup: '0', a_pre: '150.', a_main: '26', a_sup: '4', low: '149.50', high: '151.00' },
+  { sym: 'BTCUSDm', change: '+125 2.15%', up: true, time: '10:00:00', spread: '35', b_pre: '64000.', b_main: '50', b_sup: '0', a_pre: '64000.', a_main: '85', a_sup: '0', low: '63500.00', high: '65[...]
+  { sym: 'ETHUSDm', change: '-45 -1.25%', up: false, time: '10:00:00', spread: '15', b_pre: '3450.', b_main: '25', b_sup: '0', a_pre: '3450.', a_main: '40', a_sup: '0', low: '3400.00', high: '3500[...]
+  { sym: 'EURUSDm', change: '+12 0.10%', up: true, time: '10:00:00', spread: '10', b_pre: '1.08', b_main: '50', b_sup: '5', a_pre: '1.08', a_main: '51', a_sup: '5', low: '1.0800', high: '1.0900' }[...]
+  { sym: 'GBPUSDm', change: '-15 -0.12%', up: false, time: '10:00:00', spread: '12', b_pre: '1.26', b_main: '40', b_sup: '2', a_pre: '1.26', a_main: '41', a_sup: '4', low: '1.2600', high: '1.2700'[...]
+  { sym: 'USDJPYm', change: '+50 0.35%', up: true, time: '10:00:00', spread: '14', b_pre: '150.', b_main: '25', b_sup: '0', a_pre: '150.', a_main: '26', a_sup: '4', low: '149.50', high: '151.00' }[...]
 ]
 
 const messagesData = [
@@ -163,7 +163,7 @@ const QuotesView = ({ openDrawer, quotes, onAddClick, onRemoveQuote }) => {
                   className="mr-4 text-[#ff3b30] hover:scale-110 transition-transform focus:outline-none"
                   title="Remove quote"
                 >
-                  <MinusCircle size={22} fill="currentColor" className="text-white dark:text-black" />
+                  <MinusCircle size={22} strokeWidth={2} className="text-[#ff3b30]" />
                 </button>
               )}
               <div className={`flex flex-col ${isEditing ? 'w-full' : 'w-[35%]'}`}>
@@ -338,7 +338,7 @@ const ChartsView = ({ openDrawer }) => (
           00:39
         </text>
       </svg>
-      <div className="absolute bottom-0 w-full h-[30px] bg-white dark:bg-[#050505] flex justify-between items-center px-2 text-[11px] text-black dark:text-white font-mono z-10 border-t border-gray-100 dark:border-gray-900">
+      <div className="absolute bottom-0 w-full h-[30px] bg-white dark:bg-[#050505] flex justify-between items-center px-2 text-[11px] text-black dark:text-white font-mono z-10 border-t border-gra[...]
         <span>21 May 08:55</span>
         <span>21 May 12:55</span>
         <span className="pr-12">21 May 16:55</span>
@@ -566,7 +566,7 @@ const EditableAccountCard = ({ acc, onChange }) => {
   const isDemo = acc.badge.toLowerCase() === 'demo'
 
   return (
-    <div className="bg-white dark:bg-[#1c1c1e] rounded-[18px] shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center relative overflow-hidden mb-4 shrink-0 transition-colors">
+    <div className="bg-white dark:bg-[#1c1c1e] rounded-[18px] shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center relative overflow-hidden mb-4 shrink-0 transitio[...]
       <div className="absolute bottom-4 left-4">
         <QrCode className="text-gray-400 dark:text-gray-500" size={24} />
       </div>
@@ -707,7 +707,7 @@ const AddQuoteView = ({ onBack, availableQuotes, onAddQuote }) => {
               </div>
               <button
                 onClick={() => onAddQuote(q)}
-                className="w-8 h-8 rounded-full bg-[#007aff]/10 dark:bg-[#007aff]/20 flex items-center justify-center text-[#007aff] hover:bg-[#007aff] hover:text-white transition-colors focus:outline-none"
+                className="w-8 h-8 rounded-full bg-[#007aff]/10 dark:bg-[#007aff]/20 flex items-center justify-center text-[#007aff] hover:bg-[#007aff] hover:text-white transition-colors focus:ou[...]
               >
                 <Plus size={18} strokeWidth={2.5} />
               </button>
@@ -876,7 +876,7 @@ export default function App() {
 
   return (
     <div className={`min-h-screen font-sans ${isDarkMode ? 'dark' : ''} bg-gray-100 dark:bg-gray-800 flex items-center justify-center`}>
-      <div className="w-full max-w-md h-[850px] max-h-screen bg-gray-50 dark:bg-black relative overflow-hidden flex flex-col shadow-2xl sm:border sm:border-gray-300 dark:sm:border-gray-800 sm:rounded-[30px]">
+      <div className="w-full max-w-md h-[850px] max-h-screen bg-gray-50 dark:bg-black relative overflow-hidden flex flex-col shadow-2xl sm:border sm:border-gray-300 dark:sm:border-gray-800 sm:rou[...]
         <div className="flex-1 overflow-hidden relative bg-white dark:bg-black">
           {activeTab === 'quotes' && (
             <QuotesView
@@ -924,7 +924,7 @@ export default function App() {
         </button>
 
         <div
-          className={`h-[75px] bg-white dark:bg-[#111] border-t border-gray-100 dark:border-gray-900 flex justify-around items-start pt-2 px-2 shrink-0 z-10 absolute bottom-0 w-full pb-4 transition-transform duration-300 ${
+          className={`h-[75px] bg-white dark:bg-[#111] border-t border-gray-100 dark:border-gray-900 flex justify-around items-start pt-2 px-2 shrink-0 z-10 absolute bottom-0 w-full pb-4 transiti[...]
             activeTab === 'accounts' || activeTab === 'add_quote' ? 'translate-y-full' : ''
           }`}
         >
@@ -942,7 +942,7 @@ export default function App() {
               <span className="text-[10px] font-semibold">{tab.label}</span>
 
               {tab.badge && (
-                <span className="absolute top-0 right-3 w-[16px] h-[16px] bg-[#ff3b30] text-white text-[9px] font-bold rounded-full flex items-center justify-center border-2 border-white dark:border-[#111]">
+                <span className="absolute top-0 right-3 w-[16px] h-[16px] bg-[#ff3b30] text-white text-[9px] font-bold rounded-full flex items-center justify-center border-2 border-white dark:bor[...]
                   {tab.badge}
                 </span>
               )}
