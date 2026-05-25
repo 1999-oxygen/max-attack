@@ -338,7 +338,7 @@ const ChartsView = ({ openDrawer }) => (
           00:39
         </text>
       </svg>
-      <div className="absolute bottom-0 w-full h-[30px] bg-white dark:bg-[#050505] flex justify-between items-center px-2 text-[11px] text-black dark:text-white font-mono z-10 border-t border-gra[...]
+      <div className="absolute bottom-0 w-full h-[30px] bg-white dark:bg-[#050505] flex justify-between items-center px-2 text-[11px] text-black dark:text-white font-mono z-10 border-t border-gray-200 dark:border-gray-800">
         <span>21 May 08:55</span>
         <span>21 May 12:55</span>
         <span className="pr-12">21 May 16:55</span>
@@ -566,7 +566,7 @@ const EditableAccountCard = ({ acc, onChange }) => {
   const isDemo = acc.badge.toLowerCase() === 'demo'
 
   return (
-    <div className="bg-white dark:bg-[#1c1c1e] rounded-[18px] shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center relative overflow-hidden mb-4 shrink-0 transitio[...]
+    <div className="bg-white dark:bg-[#1c1c1e] rounded-[18px] shadow-sm border border-gray-100 dark:border-gray-800 p-6 flex flex-col items-center relative overflow-hidden mb-4 shrink-0 transition-colors">
       <div className="absolute bottom-4 left-4">
         <QrCode className="text-gray-400 dark:text-gray-500" size={24} />
       </div>
@@ -707,7 +707,7 @@ const AddQuoteView = ({ onBack, availableQuotes, onAddQuote }) => {
               </div>
               <button
                 onClick={() => onAddQuote(q)}
-                className="w-8 h-8 rounded-full bg-[#007aff]/10 dark:bg-[#007aff]/20 flex items-center justify-center text-[#007aff] hover:bg-[#007aff] hover:text-white transition-colors focus:ou[...]
+                className="w-8 h-8 rounded-full bg-[#007aff]/10 dark:bg-[#007aff]/20 flex items-center justify-center text-[#007aff] hover:bg-[#007aff] hover:text-white transition-colors focus:outline-none"
               >
                 <Plus size={18} strokeWidth={2.5} />
               </button>
@@ -876,7 +876,7 @@ export default function App() {
 
   return (
     <div className={`min-h-screen font-sans ${isDarkMode ? 'dark' : ''} bg-gray-100 dark:bg-gray-800 flex items-center justify-center`}>
-      <div className="w-full max-w-md h-[850px] max-h-screen bg-gray-50 dark:bg-black relative overflow-hidden flex flex-col shadow-2xl sm:border sm:border-gray-300 dark:sm:border-gray-800 sm:rou[...]
+      <div className="w-full max-w-md h-[850px] max-h-screen bg-gray-50 dark:bg-black relative overflow-hidden flex flex-col shadow-2xl sm:border sm:border-gray-300 dark:sm:border-gray-800 sm:rounded-2xl">
         <div className="flex-1 overflow-hidden relative bg-white dark:bg-black">
           {activeTab === 'quotes' && (
             <QuotesView
@@ -924,7 +924,7 @@ export default function App() {
         </button>
 
         <div
-          className={`h-[75px] bg-white dark:bg-[#111] border-t border-gray-100 dark:border-gray-900 flex justify-around items-start pt-2 px-2 shrink-0 z-10 absolute bottom-0 w-full pb-4 transiti[...]
+          className={`h-[75px] bg-white dark:bg-[#111] border-t border-gray-100 dark:border-gray-900 flex justify-around items-start pt-2 px-2 shrink-0 z-10 absolute bottom-0 w-full pb-4 transition-transform ${
             activeTab === 'accounts' || activeTab === 'add_quote' ? 'translate-y-full' : ''
           }`}
         >
@@ -942,7 +942,7 @@ export default function App() {
               <span className="text-[10px] font-semibold">{tab.label}</span>
 
               {tab.badge && (
-                <span className="absolute top-0 right-3 w-[16px] h-[16px] bg-[#ff3b30] text-white text-[9px] font-bold rounded-full flex items-center justify-center border-2 border-white dark:bor[...]
+                <span className="absolute top-0 right-3 w-[16px] h-[16px] bg-[#ff3b30] text-white text-[9px] font-bold rounded-full flex items-center justify-center border-2 border-white dark:border-black">
                   {tab.badge}
                 </span>
               )}
